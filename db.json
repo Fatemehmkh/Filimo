@@ -1,0 +1,12 @@
+{
+  "menu": [
+    { "id": 1, "name": "فیلیموتور", "link": "./index.html", "dropdown": [] },
+    { "id": 2, "name": "فیلم", "link": "./index.html", "dropdown": [] },
+    { "id": 3, "name": "سریال", "link": "./index.html", "dropdown": [] },
+    { "id": 4, "name": "ایرانی", "link": "./index.html", "dropdown": [] },
+    { "id": 5, "name": "خارجی", "link": "./index.html", "dropdown": [] },
+    { "id": 6, "name": "مجموعه ها", "link": "./index.html", "dropdown": [] },
+    { "id": 7, "name": "فیلیمو مدرسه", "link": "./index.html", "dropdown": [] },
+    { "id": 8, "name": "جستجو", "link": "./index.html", "dropdown": [] }
+  ]
+}

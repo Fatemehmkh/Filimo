@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/** font config **/
+
+@font-face {
+  font-family: filimo;
+  src: url("../../resource/font/IRANSans.eot");
+  src: url("../../resource/font/IRANSans.woff");
+  src: url("../../resource/font/IRANSans.woff2");
+  src: url("../../resource/font/IRANSans.ttf");
+}
+
+/** font config **/
+/** Wrapper **/
+@layer components {
+  .wrapper {
+    @apply w-full;
+  }
+}
+/** Wrapper **/
+/** Start Menu **/
+@layer components {
+  .menu {
+    @apply w-full h-68 bg-[#2b2b2b];
+  }
+  nav {
+    @apply w-full h-full flex flex-wrap justify-center gap-5;
+  }
+  div {
+    @apply w-fit h-full;
+  }
+  a {
+    @apply p-0  h-full leading-68 text-white text-xs  ;
+  }
+}
+/** End Menu **/

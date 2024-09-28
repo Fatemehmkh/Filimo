@@ -2,7 +2,14 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      height: {
+        68: "4.5rem",
+      },
+      lineHeight: {
+        68: "4.5rem",
+      },
+    },
   },
   plugins: [],
 };
