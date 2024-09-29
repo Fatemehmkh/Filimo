@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -9,22 +9,90 @@
   </head>
   <body>
     <!-- ** Start Project -->
-    <div class="wrapper">
+    <div class="HeroSection">
       <!-- ** Start Menu -->
-      <div class="menu">
-        <nav>
-          <div>
-            <a href="#">فیلموتور</a>
-            <a href="#">فیلم</a>
-            <a href="#">سریال</a>
-            <a href="#">ایرانی</a>
-            <a href="#">خارجی</a>
-            <a href="#">مجموعه ها</a>
-            <a href="#">فیلیمو مدرسه</a>
-            <a href="#">کودک</a>
-            <a href="#">جستجو</a>
+      <header class="w-full h-14 fixed inset-0 z-50 bg-[#050505]">
+        <nav class="w-full h-full flex">
+          <div
+            class="right flex justify-center items-center gap-9 w-1/2 h-full"
+          >
+            <div class="w-28 border-l-[1px] border-gray-500">
+              <a href="#">
+                <img
+                  class="h-6 w-20"
+                  src="./resource/svg/logo-filimo.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div>
+              <a href="#" class="w-auto flex gap-1 items-center">
+                <img src="./resource/svg/fire-icon.svg" alt="" />
+                <span class="text-white font-filimo text-xs">فیلیموتور</span>
+              </a>
+            </div>
+            <div>
+              <a href="#" class="w-auto flex gap-1 items-center">
+                <img
+                  class="w-5 h-5 ml-1"
+                  src="./resource/svg/school-filimo.svg"
+                  alt=""
+                />
+                <span class="text-white font-filimo text-xs">فیلیمومدرسه</span>
+              </a>
+            </div>
+            <div>
+              <a href="#" class="w-auto flex gap-1 items-center">
+                <img
+                  class="w-5 h-5"
+                  src="./resource/svg/search-filimo.svg"
+                  alt=""
+                />
+                <span class="text-white font-filimo text-xs">جستجو</span>
+              </a>
+            </div>
+          </div>
+          <div
+            class="left flex justify-end items-center gap-4 w-1/2 h-full pl-36"
+          >
+            <button
+              class="w-[117px] h-9 bg-[#17924E] flex items-center gap-1 justify-center rounded font-filimo text-white text-xs"
+            >
+              <img
+                class="w-[18px] h-[18px]"
+                src="./resource/svg/share-buying.svg"
+                alt=""
+              />خرید اشتراک
+            </button>
+            <button
+              class="w-14 h-9 bg-[#434343] rounded font-filimo text-white text-xs"
+            >
+              ورود
+            </button>
           </div>
         </nav>
+      </header>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="slider">
+            <img src="./resource/image/swiper/img-1.png" alt="" />
+          </div>
+          <div class="slider">
+            <img src="./resource/image/swiper/img-2.png" alt="" />
+          </div>
+          <div class="slider">
+            <img src="./resource/image/swiper/img-3.png" alt="" />
+          </div>
+          <div class="slider">
+            <img src="./resource/image/swiper/img-4.png" alt="" />
+          </div>
+          <div class="slider">
+            <img src="./resource/image/swiper/img-5.png" alt="" />
+          </div>
+        </div>
+        <button class="next">next</button>
+        <button class="prev">prev</button>
+        <div class="pagination"></div>
       </div>
       <!-- ** End Menu -->
     </div>

@@ -2,12 +2,15 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    fontFamily: {
+      filimo: "filimo",
+    },
     extend: {
       height: {
-        68: "4.5rem",
+        52: "3.25rem",
       },
       lineHeight: {
-        68: "4.5rem",
+        52: "3.25rem",
       },
     },
   },

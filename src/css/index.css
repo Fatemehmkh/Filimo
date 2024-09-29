@@ -3,7 +3,10 @@
 @tailwind utilities;
 
 /** font config **/
-
+* {
+  margin: 0;
+  padding: 0;
+}
 @font-face {
   font-family: filimo;
   src: url("../../resource/font/IRANSans.eot");
@@ -13,26 +16,26 @@
 }
 
 /** font config **/
-/** Wrapper **/
+/** Hero Section **/
 @layer components {
-  .wrapper {
-    @apply w-full;
+  .HeroSection {
+    @apply w-full h-fit;
   }
 }
-/** Wrapper **/
-/** Start Menu **/
+/** Hero Section **/
+/** Start Swiper **/
 @layer components {
-  .menu {
-    @apply w-full h-68 bg-[#2b2b2b];
+  .swiper {
+    @apply w-full h-screen;
   }
-  nav {
-    @apply w-full h-full flex flex-wrap justify-center gap-5;
+  .swiper-wrapper {
+    @apply w-full h-screen relative;
   }
-  div {
-    @apply w-fit h-full;
+  .slider {
+    @apply w-full h-full absolute left-0 top-0;
   }
-  a {
-    @apply p-0  h-full leading-68 text-white text-xs  ;
+  img {
+    @apply w-full h-full object-cover;
   }
 }
-/** End Menu **/
+/** End Swiper **/
