@@ -16,81 +16,60 @@
 }
 
 /** font config **/
-/** Hero Section **/
-
-/** Hero Section **/
-/** Start Swiper **/
-/* @layer components {
-  .swiper {
-    @apply w-screen h-screen overflow-hidden;
-  }
-  .swiper-wrapper {
-    @apply w-fit h-screen relative;
-  }
-  .slide {
-    @apply flex flex-row-reverse w-full h-full duration-500 transition-all;
-  }
-  img {
-    @apply w-full h-full object-cover;
-  }
-  .next {
-    @apply w-8 h-8 bg-red-600 absolute rounded-full top-52 left-14;
-  }
-  .next::after {
-    content: "\003E";
-  }
-  .prev {
-    @apply w-8 h-8 bg-red-600 absolute rounded-full top-52 right-14;
-  }
-  .prev::after {
-    content: "\003C";
-  }
-  .next:disabled {
-    @apply opacity-35 cursor-not-allowed;
-  }
-  .prev:disabled {
-    @apply opacity-35 cursor-not-allowed;
-  }
-}  */
 
 @layer components {
   .swiper {
     width: 100%;
-    height: 100vh;
+    height: 600px;
+    background-color: #2b2b2b;
     .swiper-wrapper {
       width: inherit;
-      height: 100vh;
+      height: 600px;
       position: relative;
+      overflow: hidden;
+      background-color: #2b2b2b;
     }
     .slide {
       width: inherit;
       height: inherit;
       position: absolute;
+      background-color: #2b2b2b;
       left: 0;
       top: 56px;
+      transition: 500ms;
+
       img {
         width: inherit;
         height: inherit;
-        object-fit: cover;
+        object-fit: contain;
+
+        box-shadow: inset 20px 20px 50px 150px #2b2b2b;
+        filter: brightness(40%);
       }
     }
   }
   .next {
-    @apply w-8 h-8 bg-red-600 absolute rounded-full top-52 left-14;
+    @apply w-10 h-10 bg-[#2b2b2b] opacity-60 absolute rounded-full bottom-44 left-14;
   }
-  .next::after {
-    content: "\003E";
-  }
+
   .prev {
-    @apply w-8 h-8 bg-red-600 absolute rounded-full top-52 right-14;
+    @apply w-10 h-10 bg-[#2b2b2b] opacity-60 absolute rounded-full bottom-44 left-24;
   }
-  .prev::after {
-    content: "\003C";
-  }
+
   .next:disabled {
     @apply opacity-35 cursor-not-allowed;
   }
   .prev:disabled {
     @apply opacity-35 cursor-not-allowed;
   }
-} 
+  .text-swiper {
+    @apply w-[1020px] h-2/5 absolute bottom-16 left-64 z-40 flex flex-col;
+  }
+}
+/** Start Special CSS **/
+
+@layer components {
+  .special {
+    @apply w-full bg-[#151515] flex flex-wrap justify-center items-center p-32;
+  }
+}

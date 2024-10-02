@@ -7,11 +7,9 @@
     <title>فیلیمو</title>
     <link rel="stylesheet" href="./src/css/index.css" />
   </head>
-  <body class="h-[5000px]">
-    <!-- ** Start Project -->
-
-    <!-- ** Start Menu -->
-    <header class="w-full h-14 fixed inset-0 z-50 bg-[#050505] opacity-70">
+  <body>
+    <!-- ** Start Herosection -->
+    <header class="w-full h-14 fixed inset-0 z-50 bg-[#2b2b2b] opacity-90">
       <nav class="w-full h-full flex">
         <div class="right flex justify-center items-center gap-9 w-1/2 h-full">
           <div class="w-28 border-l-[1px] border-gray-500">
@@ -26,7 +24,10 @@
           <div>
             <a href="#" class="w-auto flex gap-1 items-center">
               <img src="./resource/svg/fire-icon.svg" alt="" />
-              <span class="text-white font-filimo text-xs">فیلیموتور</span>
+              <span
+                class="text-white font-filimo text-xs hover:text-[#E9B339] hover:text-sm duration-300"
+                >فیلیموتور</span
+              >
             </a>
           </div>
           <div>
@@ -36,7 +37,10 @@
                 src="./resource/svg/school-filimo.svg"
                 alt=""
               />
-              <span class="text-white font-filimo text-xs">فیلیمومدرسه</span>
+              <span
+                class="text-white font-filimo text-xs hover:text-[#E9B339] hover:text-sm duration-300"
+                >فیلیمومدرسه</span
+              >
             </a>
           </div>
           <div>
@@ -46,7 +50,10 @@
                 src="./resource/svg/search-filimo.svg"
                 alt=""
               />
-              <span class="text-white font-filimo text-xs">جستجو</span>
+              <span
+                class="text-white font-filimo text-xs hover:text-[#E9B339] hover:text-sm duration-300"
+                >جستجو</span
+              >
             </a>
           </div>
         </div>
@@ -54,7 +61,7 @@
           class="left flex justify-end items-center gap-4 w-1/2 h-full pl-36"
         >
           <button
-            class="w-[117px] h-9 bg-[#17924E] flex items-center gap-1 justify-center rounded font-filimo text-white text-xs"
+            class="w-[117px] h-9 bg-[#17924E] flex items-center gap-1 justify-center rounded font-filimo text-white text-xs hover:opacity-80 duration-300"
           >
             <img
               class="w-[18px] h-[18px]"
@@ -70,40 +77,96 @@
         </div>
       </nav>
     </header>
+    <!-- ** Start Swiper-->
     <div class="swiper">
       <div class="swiper-wrapper">
-        <div class="slide">
-          <img src="./resource/image/swiper/img-1.png" alt="">
+        <div class="text-swiper">
+          <div class="w-full h-1/6 flex justify-center">
+            <h2 class="font-filimo text-sm text-orange-600 font-bold">
+              با فیلیمو بی وقفه فیلم ببین
+            </h2>
+          </div>
+          <div class="w-full h-2/6 flex justify-center">
+            <h3 class="text-white text-4xl font-filimo font-bold">
+              کنترل همیشه دست توست!
+            </h3>
+          </div>
+          <div class="w-full h-12 flex justify-between">
+            <div class="h-full flex gap-2 items-center">
+              <div class="w-5 h-5 bg-green-800 rounded-full opacity-80">
+                <img src="./resource/svg/check.svg" alt="" />
+              </div>
+              <span class="font-filimo text-sm text-white opacity-80"
+                >95 هزار اپیزود فیلم و سریال برای تماشا داری</span
+              >
+            </div>
+
+            <div class="h-full flex gap-2 items-center">
+              <div class="w-5 h-5 bg-green-800 rounded-full opacity-80">
+                <img src="./resource/svg/check.svg" alt="" />
+              </div>
+              <span class="font-filimo text-sm text-white opacity-60"
+                >می تونی دانلود کنی بعد بدون اینترنت تماشا کنی</span
+              >
+            </div>
+            <div class="h-full flex gap-2 items-center">
+              <div class="w-5 h-5 bg-green-800 rounded-full opacity-80">
+                <img src="./resource/svg/check.svg" alt="" />
+              </div>
+              <span class="font-filimo text-sm text-white opacity-60"
+                >می تونی یک عضو، مخصوص تماشای کودک بسازی</span
+              >
+            </div>
+          </div>
+          <div class="w-full h-14 flex justify-center">
+            <button
+              class="w-56 h-full bg-green-800 mx-auto rounded-md flex justify-center items-center gap-3 font-filimo text-sm font-bold text-[whitesmoke]"
+            >
+              <img src="./resource/svg/share-buying.svg" alt="" />خرید اشتراک و
+              تماشا
+            </button>
+          </div>
+          <div class="w-full h-8 flex justify-center items-center pt-3">
+            <div class="flex w-56 justify-center items-center gap-2">
+              <img class="w-6 h-6" src="./resource/svg/gift.svg" alt="" />
+              <span class="font-filimo text-[10px] text-white opacity-60"
+                >تخفیف ویژه برای کاربران جدید</span
+              >
+            </div>
+          </div>
         </div>
         <div class="slide">
-          <img src="./resource/image/swiper/img-2.png" alt="">
-         
+          <img src="./resource/image/swiper/img-1.png" alt="" />
         </div>
         <div class="slide">
-          <img src="./resource/image/swiper/img-3.png" alt="">
-         
+          <img src="./resource/image/swiper/img-2.png" alt="" />
         </div>
         <div class="slide">
-          <img src="./resource/image/swiper/img-4.png" alt="">
-          
+          <img src="./resource/image/swiper/img-3.png" alt="" />
         </div>
         <div class="slide">
-          <img src="./resource/image/swiper/img-5.png" alt="">
-          
+          <img src="./resource/image/swiper/img-4.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./resource/image/swiper/img-5.png" alt="" />
         </div>
       </div>
-      <button class="next"></button>
-      <button class="prev" disabled></button>
+      <button class="next flex justify-center items-center">
+        <img src="./resource/svg/chevron-left.svg" alt="" />
+      </button>
+      <button class="prev flex justify-center ml-2 items-center" disabled>
+        <img src="./resource/svg/chevron-right.svg" alt="" />
+      </button>
       <div class="pagination"></div>
-
+    </div>
+    <!-- ** End Swiper-->
+    <!-- ** End Herosection -->
+    <!-- ** Start Special Section -->
+    <div class="special">
       
-      
-  </div>
-  <!-- ** End Menu -->
-  
+    </div>
+    <!-- ** End Special Section -->
 
-
-    <!-- ** End Project -->
     <script src="./src/javascript/index.js"></script>
   </body>
 </html>

@@ -75,9 +75,3 @@ function repeatSlide(direct) {
   }
 }
 
-// window.addEventListener("mousedown",function(e){
-//    console.log(e);
-// })
-// window.addEventListener("mouseup",function(e){
-//   console.log(e);
-// })
