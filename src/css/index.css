@@ -70,6 +70,15 @@
 
 @layer components {
   .special {
-    @apply w-full bg-[#151515] flex flex-wrap justify-center items-center p-32;
+    @apply w-full h-[628px] bg-[#151515] flex flex-col;
+  }
+  .specialTitle {
+    @apply w-full h-10 bg-red-900 flex justify-between px-10 items-center;
+  }
+  .imageSpecial {
+    @apply w-full h-[588px] bg-green-700 flex flex-wrap items-center justify-center p-10 gap-1;
+  }
+  .imageSpecial > img {
+    @apply w-[281px] h-[176px] object-cover relative;
   }
 }
