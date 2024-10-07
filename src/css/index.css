@@ -49,11 +49,11 @@
     }
   }
   .next {
-    @apply w-10 h-10 bg-[#2b2b2b] opacity-60 absolute rounded-full bottom-44 left-14;
+    @apply w-10 h-10 bg-[#2b2b2b] opacity-60 absolute rounded-full bottom-64 left-8;
   }
 
   .prev {
-    @apply w-10 h-10 bg-[#2b2b2b] opacity-60 absolute rounded-full bottom-44 left-24;
+    @apply w-10 h-10 bg-[#2b2b2b] opacity-60 absolute rounded-full bottom-64 left-20;
   }
 
   .next:disabled {
@@ -73,12 +73,27 @@
     @apply w-full h-[628px] bg-[#151515] flex flex-col;
   }
   .specialTitle {
-    @apply w-full h-10 bg-red-900 flex justify-between px-10 items-center;
+    @apply w-full h-10 bg-[#151515] flex justify-between px-10 items-center pt-4;
   }
   .imageSpecial {
-    @apply w-full h-[588px] bg-green-700 flex flex-wrap items-center justify-center p-10 gap-1;
+    @apply w-full h-[700px] bg-[#151515] flex flex-wrap items-center justify-center p-3 gap-3;
   }
-  .imageSpecial > img {
-    @apply w-[281px] h-[176px] object-cover relative;
+  .cover {
+    @apply w-[281px] h-[176px] bg-[#383028]  absolute rounded-md left-0 top-0 z-50 opacity-0;
+  }
+  .imageSpecialBox {
+    @apply relative rounded-2xl h-[176px] w-[281px];
+  }
+  .imageSpecialBox > img {
+    @apply w-[281px] h-[176px] object-cover rounded-md;
+  }
+  .imageSpecialBox:hover > .cover {
+    @apply opacity-70 transition-all duration-300;
+  }
+  .nameOfMovie {
+    @apply block text-white font-filimo text-xs pr-1 mt-32;
+  }
+  .genreAndYear {
+    @apply block text-white font-filimo text-xs pr-1 mt-2;
   }
 }

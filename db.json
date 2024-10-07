@@ -82,8 +82,8 @@
       "country": "آمریکا",
       "year": 2023,
       "genre": ["وحشت", "هیجان انگیز"],
-      "srcLandscape": "./resource/image/special section/",
-      "srcPortraite": "./resource/image/special section/looser-portraite.png",
+      "srcLandscape": "./resource/image/special section/bitterSweetHell-lanscape.png",
+      "srcPortraite": "./resource/image/special section/lastStraw-portraite.png",
       "description": "movie",
       "altText": "poster"
     },

@@ -1,10 +1,13 @@
+import special from "./special/special";
+
+
 let slide = document.querySelectorAll(".slide");
 let next = document.querySelector(".next");
 let prev = document.querySelector(".prev");
 let counter = 0;
- slide.forEach((item, index) => {
-   item.style.transform = `translateX(${(index) * 100}%)`;
- });
+slide.forEach((item, index) => {
+  item.style.transform = `translateX(${index * 100}%)`;
+});
 
 function counterSlide(c) {
   slide.forEach((item, index) => {
@@ -75,3 +78,4 @@ function repeatSlide(direct) {
   }
 }
 
+special()
