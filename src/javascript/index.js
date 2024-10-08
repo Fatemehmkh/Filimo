@@ -1,5 +1,6 @@
+import hot from "./hot/hot";
+import news from "./news/news";
 import special from "./special/special";
-
 
 let slide = document.querySelectorAll(".slide");
 let next = document.querySelector(".next");
@@ -78,4 +79,6 @@ function repeatSlide(direct) {
   }
 }
 
-special()
+special();
+news();
+hot();

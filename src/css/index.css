@@ -101,7 +101,80 @@
 /** Start Filter **/
 @layer components {
   .filter {
-    @apply w-full h-96 bg-[#151515] flex flex-col items-center;
+    @apply w-full h-60 bg-[#151515] flex flex-col items-center;
   }
 }
 /** End Filter **/
+/** Start News **/
+@layer components {
+  .news {
+    @apply w-full h-[370px] bg-[#151515];
+  }
+  .newTitle {
+    @apply w-full h-14 flex justify-between items-end px-10;
+  }
+  .imageNews {
+    @apply w-full h-[314px] bg-[#151515] flex gap-9 flex-nowrap p-10;
+  }
+  .imageNewsItem {
+    @apply w-[170px] h-[260px] relative rounded;
+  }
+  .imageNewsItem:hover > .coverNews {
+    @apply opacity-50 transition-all duration-300;
+  }
+  .imageNewsItem > img {
+    @apply w-[148px] h-[227px] object-cover rounded;
+  }
+  .coverNews {
+    @apply w-[148px] h-[227px] flex flex-col justify-end pb-3 gap-3 absolute top-0 bg-slate-800 z-50 pr-2 opacity-0 rounded;
+  }
+  .movieName {
+    @apply font-filimo text-xs text-gray-300 mr-2;
+  }
+  .IMDB {
+    @apply w-16 h-8 bg-gray-900 rounded-2xl  font-filimo text-white text-[12px] leading-8 text-center;
+  }
+  .movieNameNews {
+    @apply text-white font-filimo text-xs;
+  }
+  .genreAndYearNews {
+    @apply text-white font-filimo text-xs;
+  }
+}
+/** End News **/
+/** Start Hot **/
+@layer components {
+  .hot {
+    @apply w-full h-[370px] bg-[#151515];
+  }
+  .hotTitle {
+    @apply w-full h-14 flex justify-between items-end px-10;
+  }
+  .imageHot {
+    @apply w-full h-[314px] bg-[#151515] flex gap-9 flex-nowrap p-10;
+  }
+  .imageHotItem {
+    @apply w-[170px] h-[260px] relative rounded;
+  }
+  .imageHotItem:hover > .coverHot {
+    @apply opacity-50 transition-all duration-300;
+  }
+  .imageHotItem > img {
+    @apply w-[148px] h-[227px] object-cover rounded;
+  }
+  .coverHot {
+    @apply w-[148px] h-[227px] flex flex-col justify-end pb-3 gap-3 absolute top-0 bg-slate-800 z-50 pr-2 opacity-0 rounded;
+  }
+  .movieName {
+    @apply font-filimo text-xs text-gray-300 mr-2;
+  }
+  .IMDB {
+    @apply w-16 h-8 bg-gray-900 rounded-2xl  font-filimo text-white text-[12px] leading-8 text-center;
+  }
+  .movieNameHot {
+    @apply text-white font-filimo text-xs;
+  }
+  .genreAndYearHot {
+    @apply text-white font-filimo text-xs;
+  }
+}
