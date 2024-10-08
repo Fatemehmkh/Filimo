@@ -16,7 +16,7 @@
 }
 
 /** font config **/
-
+/** Start Swiper and Header **/
 @layer components {
   .swiper {
     width: 100%;
@@ -66,8 +66,8 @@
     @apply w-[1020px] h-2/5 absolute bottom-16 left-64 z-40 flex flex-col;
   }
 }
+/** End Swiper and Header **/
 /** Start Special CSS **/
-
 @layer components {
   .special {
     @apply w-full h-[628px] bg-[#151515] flex flex-col;
@@ -97,3 +97,11 @@
     @apply block text-white font-filimo text-xs pr-1 mt-2;
   }
 }
+/** End Special CSS **/
+/** Start Filter **/
+@layer components {
+  .filter {
+    @apply w-full h-96 bg-[#151515] flex flex-col items-center;
+  }
+}
+/** End Filter **/

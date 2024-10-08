@@ -11,6 +11,10 @@
       href="./resource/image/icon/favicon-32x32.png"
       type="image/x-icon"
     />
+    <link
+      rel="stylesheet"
+      href="./node_modules/flowbite/dist/flowbite.min.css"
+    />
   </head>
   <body>
     <!-- ** Start Herosection -->
@@ -194,10 +198,379 @@
         </div> -->
       </div>
     </div>
-    <!-- ** End Special Section -->
 
+    <!-- ** End Special Section -->
+    <!-- ** Start Filter Section -->
+    <div class="filter">
+      <div class="w-11/12 h-[0.5px] bg-gray-600 mt-14 relative">
+        <a
+          class="w-36 h-11 border bg-[#272727] border-gray-400 rounded-md text-[#dad7d7] font-filimo text-sm flex justify-center items-center gap-2 absolute -top-5 right-96 mr-56 z-"
+          >مشاهده بیشتر
+          <img class="w-5 h-5" src="./resource/svg/filter-moshahede.svg" alt=""
+        /></a>
+      </div>
+      <div
+        class="w-11/12 h-20 bg-[#272727] rounded-md mt-14 flex flex-nowrap items-center gap-3 px-4"
+      >
+        <button
+          id="dropdownDefaultButton-1"
+          data-dropdown-toggle="dropdown-1"
+          class="w-40 h-12 text-gray-400 bg-[#272727] border border-gray-600 focus:outline-none rounded-md font-filimo text-sm px-5 flex items-center gap-3"
+          type="button"
+        >
+          فیلم و سریال
+          <img
+            class="w-5 h-5"
+            src="./resource/svg/filter-moshahede-gray.svg"
+            alt=""
+          />
+        </button>
+        <!-- Dropdown menu -->
+        <div
+          id="dropdown-1"
+          class="z-10 hidden bg-[#2b2b2b] divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-300"
+            aria-labelledby="dropdownDefaultButton"
+          >
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-[#2b2b2b] font-filimo"
+                >همه</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-[#2b2b2b] font-filimo"
+                >فیلم</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-[#2b2b2b] font-filimo"
+                >سریال</a
+              >
+            </li>
+          </ul>
+        </div>
+        <button
+          id="dropdownDefaultButton-2"
+          data-dropdown-toggle="dropdown-2"
+          class="w-40 h-12 text-gray-400 bg-[#272727] border border-gray-600 focus:outline-none rounded-md font-filimo text-sm px-5 flex items-center gap-8"
+          type="button"
+        >
+          زبان فیلم
+          <img
+            class="w-5 h-5"
+            src="./resource/svg/filter-moshahede-gray.svg"
+            alt=""
+          />
+        </button>
+        <!-- Dropdown menu -->
+        <div
+          id="dropdown-2"
+          class="z-10 hidden bg-[#2b2b2b] divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-300"
+            aria-labelledby="dropdownDefaultButton"
+          >
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-[#2b2b2b] font-filimo"
+                >همه</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-[#2b2b2b] font-filimo"
+                >دوبله فارسی</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-[#2b2b2b] font-filimo"
+                >زیرنویس فارسی</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-[#2b2b2b] font-filimo"
+                >زیرنویس انگلیسی</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-[#2b2b2b] font-filimo"
+                >زبان اصلی</a
+              >
+            </li>
+          </ul>
+        </div>
+        <button
+          id="dropdownDefaultButton-3"
+          data-dropdown-toggle="dropdown-3"
+          class="w-40 h-12 text-gray-400 bg-[#272727] border border-gray-600 focus:outline-none rounded-md font-filimo text-sm px-5 flex items-center gap-9"
+          type="button"
+        >
+          رده سنی
+          <img
+            class="w-5 h-5"
+            src="./resource/svg/filter-moshahede-gray.svg"
+            alt=""
+          />
+        </button>
+        <!-- Dropdown menu -->
+        <div
+          id="dropdown-3"
+          class="z-10 hidden bg-[#2b2b2b] divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-300"
+            aria-labelledby="dropdownDefaultButton"
+          >
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-[#2b2b2b] font-filimo"
+                >همه</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-[#2b2b2b] font-filimo"
+                >زیر 3 سال</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-[#2b2b2b] font-filimo"
+                >تا 6 سال</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-[#2b2b2b] font-filimo"
+                >تا 12 سال</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-[#2b2b2b] font-filimo"
+                >تا 15 سال</a
+              >
+            </li>
+          </ul>
+        </div>
+        <button
+          id="dropdownCheckboxButton"
+          data-dropdown-toggle="dropdownDefaultCheckbox"
+          class="w-40 h-12 text-gray-400 bg-[#272727] border border-gray-600 focus:outline-none font-filimo rounded-md text-sm px-5 py-2.5 flex items-center gap-3"
+          type="button"
+        >
+          کشور سازنده<img class="w-5 h-5"
+            src="./resource/svg/filter-moshahede-gray.svg"
+            alt=""
+          />
+        </button>
+
+        <!-- Dropdown menu -->
+        <div
+          id="dropdownDefaultCheckbox"
+          class="z-10 hidden w-48 bg-[#2b2b2b] divide-y rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
+        >
+          <ul
+            class="p-3 space-y-3 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="dropdownCheckboxButton"
+          >
+            <li>
+              <div class="flex items-center">
+                <input
+                  id="checkbox-item-1"
+                  type="checkbox"
+                  value=""
+                  class="w-4 h-4 text-orange-300 bg-gray-100 border-gray-300 rounded focus:ring-orange-300"
+                />
+                <label
+                  for="checkbox-item-1"
+                  class="ms-2 text-sm font-filimo text-gray-400"
+                  >ایران</label
+                >
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center">
+                <input
+                  checked
+                  id="checkbox-item-2"
+                  type="checkbox"
+                  value=""
+                  class="w-4 h-4 text-orange-300 bg-gray-100 border-gray-300 rounded focus:ring-orange-300 focus:ring-2"
+                />
+                <label
+                  for="checkbox-item-2"
+                  class="ms-2 text-sm font-filimo text-gray-400"
+                  >آمریکا</label
+                >
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center">
+                <input
+                  id="checkbox-item-3"
+                  type="checkbox"
+                  value=""
+                  class="w-4 h-4 text-orange-300 bg-gray-100 border-gray-300 rounded focus:ring-orange-300 focus:ring-2"
+                />
+                <label
+                  for="checkbox-item-3"
+                  class="ms-2 text-sm font-filimo text-gray-400"
+                  >فرانسه</label
+                >
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center">
+                <input
+                  id="checkbox-item-3"
+                  type="checkbox"
+                  value=""
+                  class="w-4 h-4 text-orange-300 bg-gray-100 border-gray-300 rounded focus:ring-orange-300 focus:ring-2"
+                />
+                <label
+                  for="checkbox-item-3"
+                  class="ms-2 text-sm font-filimo text-gray-400"
+                  >هند</label
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+        <button
+          id="dropdownDefaultButton"
+          data-dropdown-toggle="dropdown"
+          class="w-40 h-10 text-[whitesmoke] bg-[#272727] border border-gray-400 focus:outline-none rounded-md font-filimo text-sm px-5 flex gap-3 items-center"
+          type="button"
+        >
+          فیلم و سریال
+          <img
+            class="w-5 h-5"
+            src="./resource/svg/filter-moshahede.svg"
+            alt=""
+          />
+        </button>
+        <!-- Dropdown menu -->
+        <div
+          id="dropdown"
+          class="z-10 hidden bg-[#2b2b2b] divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-300"
+            aria-labelledby="dropdownDefaultButton"
+          >
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-[#2b2b2b]">همه</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-[#2b2b2b]">فیلم</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-[#2b2b2b]">سریال</a>
+            </li>
+          </ul>
+        </div>
+        <button
+          id="dropdownDefaultButton"
+          data-dropdown-toggle="dropdown"
+          class="w-40 h-10 text-[whitesmoke] bg-[#272727] border border-gray-400 focus:outline-none rounded-md font-filimo text-sm px-5 flex gap-3 items-center"
+          type="button"
+        >
+          فیلم و سریال
+          <img
+            class="w-5 h-5"
+            src="./resource/svg/filter-moshahede.svg"
+            alt=""
+          />
+        </button>
+        <!-- Dropdown menu -->
+        <div
+          id="dropdown"
+          class="z-10 hidden bg-[#2b2b2b] divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-300"
+            aria-labelledby="dropdownDefaultButton"
+          >
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-[#2b2b2b]">همه</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-[#2b2b2b]">فیلم</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-[#2b2b2b]">سریال</a>
+            </li>
+          </ul>
+        </div>
+        <button
+          id="dropdownDefaultButton"
+          data-dropdown-toggle="dropdown"
+          class="w-40 h-10 text-[whitesmoke] bg-[#272727] border border-gray-400 focus:outline-none rounded-md font-filimo text-sm px-5 flex gap-3 items-center"
+          type="button"
+        >
+          فیلم و سریال
+          <img
+            class="w-5 h-5"
+            src="./resource/svg/filter-moshahede.svg"
+            alt=""
+          />
+        </button>
+        <!-- Dropdown menu -->
+        <div
+          id="dropdown"
+          class="z-10 hidden bg-[#2b2b2b] divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-300"
+            aria-labelledby="dropdownDefaultButton"
+          >
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-[#2b2b2b]">همه</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-[#2b2b2b]">فیلم</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-[#2b2b2b]">سریال</a>
+            </li>
+          </ul>
+        </div>
+        <button
+          id="dropdownDefaultButton"
+          data-dropdown-toggle="dropdown"
+          class="w-40 h-10 text-[whitesmoke] bg-[#272727] border border-gray-400 focus:outline-none rounded-md font-filimo text-sm px-5 flex gap-3 items-center"
+          type="button"
+        >
+          فیلم و سریال
+          <img
+            class="w-5 h-5"
+            src="./resource/svg/filter-moshahede.svg"
+            alt=""
+          />
+        </button>
+        <!-- Dropdown menu -->
+        <div
+          id="dropdown"
+          class="z-10 hidden bg-[#2b2b2b] divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-300"
+            aria-labelledby="dropdownDefaultButton"
+          >
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-[#2b2b2b]">همه</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-[#2b2b2b]">فیلم</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-[#2b2b2b]">سریال</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- ** End Filter Section -->
     <script type="module" src="./src/javascript/index.js"></script>
-    <!-- <script src="./src/javascript/special/special.js" ></script> -->
+    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+
     <script src="./src/javascript/special/test.js"></script>
   </body>
 </html>
