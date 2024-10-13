@@ -327,5 +327,52 @@
       "year": 2024,
       "IMDB": "6.5 / 10"
     }
+  ],
+  "series": [
+    {
+      "id": 1,
+      "title": "اختصاصی فیلیمو",
+      "nameFA": "آکتور",
+      "episode": "فصل 1 قسمت 1",
+      "srcLandscape": "./resource/image/specialSeries/actor.png",
+      "genre": ["درام", "خانوادگی"],
+      "IMDB": "10 / 6.8"
+    },
+    {
+      "id": 2,
+      "title": "اختصاصی فیلیمو",
+      "nameFA": "رهایم کن",
+      "episode": "فصل 1 قسمت 1",
+      "srcLandscape": "./resource/image/specialSeries/rahayamKon.png",
+      "genre": ["خانوادگی", "عاشقانه"],
+      "IMDB": "10 / 5.3"
+    },
+    {
+      "id": 3,
+      "title": "",
+      "nameFA": "میخواهم  زنده بمانم",
+      "episode": "فصل 1 قسمت 1",
+      "srcLandscape": "./resource/image/specialSeries/mikhahamZendeBemanam.png",
+      "genre": ["درام", "عاشقانه"],
+      "IMDB": "10 / 7.4"
+    },
+    {
+      "id": 4,
+      "title": "اختصاصی فیلیمو",
+      "nameFA": "میخواهم  زنده بمانم",
+      "episode": "فصل 1 قسمت 1",
+      "srcLandscape": "./resource/image/specialSeries/mikhahamZendeBemanam.png",
+      "genre": ["درام", "عاشقانه"],
+      "IMDB": "10 / 7.4"
+    },
+    {
+      "id": 5,
+      "title": "",
+      "nameFA": "نیسان آبی",
+      "episode": "فصل 1 قسمت 1",
+      "srcLandscape": "./resource/image/specialSeries/neysaneAbi.png",
+      "genre": ["درام", "کمدی"],
+      "IMDB": "10 / 3.9"
+    }
   ]
 }

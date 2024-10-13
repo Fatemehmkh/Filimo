@@ -1,6 +1,8 @@
 import hot from "./hot/hot";
 import news from "./news/news";
 import special from "./special/special";
+import series from "./series/series"
+
 
 let slide = document.querySelectorAll(".slide");
 let next = document.querySelector(".next");
@@ -82,3 +84,4 @@ function repeatSlide(direct) {
 special();
 news();
 hot();
+series()

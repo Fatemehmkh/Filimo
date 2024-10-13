@@ -24,3 +24,4 @@ async function news() {
   }
 }
 export default news;
+
