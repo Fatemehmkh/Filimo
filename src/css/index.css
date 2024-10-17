@@ -16,6 +16,25 @@
 }
 
 /** font config **/
+/** Menu CSS **/
+@layer components {
+  .sub-menu {
+    @apply w-fit h-full flex items-center justify-center relative gap-1;
+  }
+  .sub-menu-item {
+    @apply hidden transition-all duration-500 delay-700;
+  }
+  .sub-menu:hover > .sub-menu-item {
+    @apply w-96 h-96 bg-[#2b2b2b] absolute -right-4 top-14 rounded flex flex-col gap-5 flex-wrap p-3;
+  }
+  .sub-menu-item-item {
+    @apply font-filimo text-xs text-white/90 transition-all duration-100 cursor-pointer;
+  }
+  .sub-menu-item-item:hover {
+    @apply text-orange-400;
+  }
+}
+/** Menu CSS **/
 /** Start Swiper and Header **/
 @layer components {
   .swiper {
@@ -37,12 +56,10 @@
       left: 0;
       top: 56px;
       transition: 500ms;
-
       img {
         width: inherit;
         height: inherit;
-        object-fit: contain;
-
+        object-fit: cover;
         box-shadow: inset 20px 20px 50px 150px #2b2b2b;
         filter: brightness(40%);
       }
@@ -213,14 +230,16 @@
 }
 /** End SpecialSeries **/
 /** Start Children Filimo **/
-.children {
-  @apply w-full h-[480px] bg-gradient-to-r from-[#151515] to-[#122F39] flex justify-center;
-}
-.children-image {
-  @apply w-2/6 h-full;
-}
-.children-text {
-  @apply w-2/6 h-full pt-40 pr-8;
+@layer components {
+  .children {
+    @apply w-full h-[480px] bg-gradient-to-r from-[#151515] to-[#122F39] flex justify-center;
+  }
+  .children-image {
+    @apply w-2/6 h-full;
+  }
+  .children-text {
+    @apply w-2/6 h-full pt-40 pr-8;
+  }
 }
 /** End Children Filimo **/
 /** Start TV Filimo **/
@@ -245,3 +264,19 @@
   }
 }
 /** End TV Filimo **/
+/** Start School Filimo **/
+@layer components {
+  .school {
+    @apply w-full h-[400px] bg-[#151515] flex justify-center items-center;
+  }
+  .schoolBackground {
+    @apply w-11/12 h-[270px] bg-[url('../../resource/image/background-school/bg_school.png')] bg-no-repeat rounded-md flex flex-col items-center;
+  }
+  .logoSchool {
+    @apply w-4/12 h-32 flex flex-wrap items-start gap-6 justify-center pt-7 pb-4;
+  }
+  .courseSchool {
+    @apply w-8/12 h-32 flex flex-wrap gap-2;
+  }
+}
+/** End School Filimo **/
